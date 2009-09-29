@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{34141EFC-C023-43C3-AFF5-0B4BB40E15DA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TECFF.Toolkit</RootNamespace>
+    <AssemblyName>TECFF.Toolkit</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AllWordFormsContextCache.cs" />
+    <Compile Include="BgRuDictionary.cs" />
+    <Compile Include="ContextWordsCache.cs" />
+    <Compile Include="Cyr2LatUtils.cs" />
+    <Compile Include="GoogleContextCache.cs" />
+    <Compile Include="GoogleContextUtils.cs" />
+    <Compile Include="GoogleOccurencesCache.cs" />
+    <Compile Include="GoogleOccurencesUtils.cs" />
+    <Compile Include="HtmlParsingUtils.cs" />
+    <Compile Include="HttpUtils.cs" />
+    <Compile Include="IndirectContextCache.cs" />
+    <Compile Include="LemmaDictionaryUtils.cs" />
+    <Compile Include="MMEDR.cs" />
+    <Compile Include="MSNContextCache.cs" />
+    <Compile Include="MSNContextUtils.cs" />
+    <Compile Include="ReversedContextCache.cs" />
+    <Compile Include="SemanticSimilarityUtils.cs" />
+    <Compile Include="StopWords.cs" />
+    <Compile Include="VectorsCache.cs" />
+    <Compile Include="VectorUtils.cs" />
+    <Compile Include="WordAndCount.cs" />
+    <Compile Include="WordAndLang.cs" />
+    <Compile Include="WordsAndCounts.cs" />
+    <Compile Include="WordsPair.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
