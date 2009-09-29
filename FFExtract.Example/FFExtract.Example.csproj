@@ -5,11 +5,11 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>9.0.30729</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{34141EFC-C023-43C3-AFF5-0B4BB40E15DA}</ProjectGuid>
-    <OutputType>Library</OutputType>
+    <ProjectGuid>{FA989281-FA8B-4F5F-9EDF-896282DB453B}</ProjectGuid>
+    <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>TECFF.Toolkit</RootNamespace>
-    <AssemblyName>TECFF.Toolkit</AssemblyName>
+    <RootNamespace>FFExtract.Example</RootNamespace>
+    <AssemblyName>FFExtract.Example</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -32,39 +32,15 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
-    <Reference Include="System.Core">
-      <RequiredTargetFramework>3.5</RequiredTargetFramework>
-    </Reference>
-    <Reference Include="System.Web" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AllWordFormsContextCache.cs" />
-    <Compile Include="BgRuDictionary.cs" />
-    <Compile Include="ContextWordsCache.cs" />
-    <Compile Include="Cyr2LatUtils.cs" />
-    <Compile Include="FalseFriendsExtractor.cs" />
-    <Compile Include="GoogleContextCache.cs" />
-    <Compile Include="GoogleContextUtils.cs" />
-    <Compile Include="GoogleOccurencesCache.cs" />
-    <Compile Include="GoogleOccurencesUtils.cs" />
-    <Compile Include="HtmlParsingUtils.cs" />
-    <Compile Include="HttpUtils.cs" />
-    <Compile Include="IndirectContextCache.cs" />
-    <Compile Include="LemmaDictionaryUtils.cs" />
-    <Compile Include="MMEDR.cs" />
-    <Compile Include="MSNContextCache.cs" />
-    <Compile Include="MSNContextUtils.cs" />
-    <Compile Include="ReversedContextCache.cs" />
-    <Compile Include="SemanticSimilarityUtils.cs" />
-    <Compile Include="SentencePair.cs" />
-    <Compile Include="StopWords.cs" />
-    <Compile Include="VectorsCache.cs" />
-    <Compile Include="VectorUtils.cs" />
-    <Compile Include="WordAndCount.cs" />
-    <Compile Include="WordAndLang.cs" />
-    <Compile Include="WordExtractor.cs" />
-    <Compile Include="WordsAndCounts.cs" />
-    <Compile Include="WordsPair.cs" />
+    <Compile Include="FFExtractExample.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TECFF.Toolkit\TECFF.Toolkit.csproj">
+      <Project>{34141EFC-C023-43C3-AFF5-0B4BB40E15DA}</Project>
+      <Name>TECFF.Toolkit</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Properties\" />
