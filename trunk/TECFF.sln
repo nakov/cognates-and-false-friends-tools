@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SemSim.Example", "SemSim.Ex
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrossSim.Example", "CrossSim.Example\CrossSim.Example.csproj", "{79235787-4629-40F4-BEEA-6BA8937671CC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FFExtract.Example", "FFExtract.Example\FFExtract.Example.csproj", "{FA989281-FA8B-4F5F-9EDF-896282DB453B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,6 +33,10 @@ Global
 		{79235787-4629-40F4-BEEA-6BA8937671CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{79235787-4629-40F4-BEEA-6BA8937671CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{79235787-4629-40F4-BEEA-6BA8937671CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA989281-FA8B-4F5F-9EDF-896282DB453B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA989281-FA8B-4F5F-9EDF-896282DB453B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA989281-FA8B-4F5F-9EDF-896282DB453B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA989281-FA8B-4F5F-9EDF-896282DB453B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
