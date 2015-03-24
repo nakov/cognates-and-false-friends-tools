@@ -25,7 +25,6 @@ namespace FFExtract.Example
             Console.WriteLine("Extracting cognates and false friends...");
             extractor.ExtractCognatesAndFalseFriends(OUTPUT_FILE);
             Console.WriteLine("Done.");
-
         }
     }
 }
